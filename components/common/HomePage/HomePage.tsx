@@ -6,17 +6,17 @@ import Image from "next/image"
 import IMAGES from "assets/img/images";
 
 const HomePage: FC = () => {
-  let stagger:string = ""
+  
   useEffect(() => {
     gsap.from(".firstimg", 2, {
       y: "400",
-      stagger: ".1",
+      staggerTo: ".1",
       ease: Expo.easeInOut,
     });
     gsap.to(".title", 3, {
       opacity: "1",
       scale: "1.1",
-      stagger: ".1",
+      staggerTo: ".1",
       ease: Expo.easeInOut,
     });
   });
