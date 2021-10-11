@@ -4,7 +4,7 @@ import { gsap, Expo } from "gsap";
 import s from "./Layout.module.css"
 import Image from "next/image"
 import IMAGES from "assets/img/images";
-
+gsap.registerPlugin(ScrollTrigger);
 const HomePage: FC = () => {
   
   useEffect(() => {
