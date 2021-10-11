@@ -18,7 +18,7 @@ const ProductSlider: FC = ({children}) => {
     <div className={s.root}>
       <div
         ref={sliderRef as React.RefObject<HTMLDivElement>}
-        className="keen-slider h-full transition-opacity">
+        className="keen-slider h-full transition-opacity rounded-lg">
         <button
           onClick={slider?.prev}
           className={cn(s.leftControl, s.control)}

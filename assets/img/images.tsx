@@ -1,0 +1,25 @@
+const IMAGES = {
+  background1: require("../img/Layer1.png").default,
+  background2: require("../img/Layer2.png").default,
+  background3: require("../img/Layer3.png").default,
+  background4: require("../img/Layer4.png").default,
+  background5: require("../img/Layer5.png").default,
+  background6: require("../img/Layer6.png").default,
+  background7: require("../img/Layer7.png").default,
+  background8: require("../img/Layer8.png").default,
+  background9: require("../img/Layer9.png").default,
+  background10: require("../img/Layer10.png").default,
+  background11: require("../img/Layer11.png").default,
+  productDetails: require("../img/product-details.jpg").default,
+  brush1: require("../img/brush1.png").default,
+  brush2: require("../img/brush2.png").default,
+  brush3: require("../img/brush3.png").default,
+  brush4: require("../img/brush4.png").default,
+  brush5: require("../img/brush5.png").default,
+  brush6: require("../img/brush6.png").default,
+  brush7: require("../img/brush7.png").default,
+  brush8: require("../img/brush8.png").default,
+  brush9: require("../img/brush9.png").default,
+};
+
+export default IMAGES;

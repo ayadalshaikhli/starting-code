@@ -7,7 +7,7 @@
 }
 
 .productDisplay {
-  @apply relative flex px-0 pb-0 box-border col-span-1 bg-violet;
+  @apply relative flex px-0 pb-0 box-border col-span-1;
   min-height: 600px;
 
   @screen md {
@@ -24,7 +24,7 @@
 }
 
 .squareBg {
-  @apply absolute inset-0 bg-violet z-0 h-full;
+  @apply absolute inset-0 z-0 h-full;
 }
 
 .nameBox {
@@ -35,7 +35,7 @@
   }
 
   & .name {
-    @apply px-6 py-2 bg-primary text-primary font-bold;
+    @apply px-6 py-2  font-bold;
     font-size: 2rem;
     letter-spacing: 0.4px;
   }
@@ -47,7 +47,8 @@
   @screen lg {
     & .name,
     & .price {
-      @apply bg-violet-light text-white;
+      @apply text-black;
+      background: #b7b8ba;
     }
   }
 }
@@ -93,4 +94,8 @@
   @screen lg {
     @apply right-12 text-white bg-violet;
   }
+}
+
+.des::-webkit-scrollbar {
+  display: none;
 }

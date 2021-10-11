@@ -43,6 +43,10 @@ query productByHandle($slug: String!) {
             amount
             currencyCode
           }
+          image {
+            id
+            originalSrc
+          }
           compareAtPriceV2 {
             amount
             currencyCode

@@ -109,13 +109,14 @@ const normalizeProductOption = ({
 const normalizeProductVariants = ({ edges }: ProductVariantConnection) => {
 
   return edges.map(({node}) => {
-    const { id, selectedOptions, sku, title, priceV2, compareAtPriceV2} = node
+    const { id, selectedOptions, sku, title, priceV2, image, compareAtPriceV2} = node
 
     return {
       id,
       name: title,
       sku: sku || id,
       price: +priceV2.amount,
+      image: image?.originalSrc,
       listPrice: +compareAtPriceV2?.amount,
       requiresShipping: true,
       options: selectedOptions.map(({name, value}: SelectedOption) => {
@@ -124,7 +125,6 @@ const normalizeProductVariants = ({ edges }: ProductVariantConnection) => {
           name,
           values: [value]
         })
-
         return option
       })
     }
@@ -161,6 +161,5 @@ export function normalizeProduct(productNode: ShopifyProduct): Product {
       normalizeProductVariants(variants) : [],
     ...rest
   }
-
   return product
 }

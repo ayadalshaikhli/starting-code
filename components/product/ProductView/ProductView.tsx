@@ -17,6 +17,7 @@ interface Props {
 const ProductView: FC<Props> = ({ product }) => {
   const [ choices, setChoices ] = useState<Choices>({})
   const [ isLoading, setIsLoading ] = useState(false)
+  const [show,setShow] = useState(false)
 
   const { openSidebar } = useUI()
   const addItem = useAddItem()
@@ -40,6 +41,8 @@ const ProductView: FC<Props> = ({ product }) => {
     }
   }
 
+console.log(product.options);
+
   return (
     <Container>
       <div className={cn(s.root, 'fit', "mb-5")}>
@@ -62,7 +65,7 @@ const ProductView: FC<Props> = ({ product }) => {
                   src={image.url}
                   alt={image.alt}
                   width={1050}
-                  height={1050}
+                  height={850}
                   quality="85"
                 />
               </div>
@@ -96,8 +99,13 @@ const ProductView: FC<Props> = ({ product }) => {
                 </div>
               </div>
             )}
-            <div className="pb-14 break-words w-full max-w-xl text-lg">
-              { product.description }
+            <div className="des pb-14 break-words overflow-x-hidden  w-full h-48  max-w-xl text-sm" >
+             
+              <Button
+              onClick={()=>setShow(!show)}>
+                Description
+              </Button>
+              {show?<h1 className="des">{ product.description }</h1>:null}
             </div>
           </section>
           <div>

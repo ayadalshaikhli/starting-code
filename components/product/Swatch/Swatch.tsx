@@ -15,6 +15,7 @@ interface Props {
 }
 
 
+
 const Swatch: FC<Props> = ({
   color, label, variant, active,
   size="md",
@@ -43,6 +44,7 @@ const Swatch: FC<Props> = ({
     >
       { variant === "color" && active &&
         <span>
+         
           <Check />
         </span>
       }

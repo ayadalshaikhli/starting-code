@@ -2,18 +2,21 @@
 
 import { FC } from "react"
 import s from "./Layout.module.css"
-import { Footer, Navbar } from "@components/common"
+import { Footer, HomePage, Navbar } from "@components/common"
 import { Sidebar } from "@components/ui"
 import { CartSidebar } from "@components/cart"
 import { useUI } from "@components/ui/context"
 import { ApiProvider } from "@framework"
+
 
 const Layout: FC = ({children}) => {
   const { isSidebarOpen, closeSidebar } = useUI()
 
   return (
     <ApiProvider>
-      <div className={s.root}>
+      <div className={s.root} style={{
+        backgroundColor: "#B7B8BA",
+      }}>
         <Navbar />
         <Sidebar
           onClose={closeSidebar}
@@ -21,6 +24,7 @@ const Layout: FC = ({children}) => {
           <CartSidebar />
         </Sidebar>
         <main className="fit">
+        
           { children }
         </main>
         <Footer />

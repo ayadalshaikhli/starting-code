@@ -2,7 +2,7 @@
 import type { InferGetStaticPropsType } from "next"
 import { getAllProducts } from "@framework/product"
 import { getConfig } from "@framework/api/config"
-import { Layout } from "@components/common"
+import { HomePage, Layout } from "@components/common"
 import { ProductCard } from "@components/product"
 import { Grid, Hero, Marquee } from "@components/ui"
 
@@ -23,21 +23,23 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
 
   return (
-    <>
-      <Grid>
-        { products.slice(0,3).map(product =>
+    <div className="body">
+    <HomePage/>
+        <div className="flex pl-20">
+        { products.slice(0,10).map(product =>
           <ProductCard
             key={product.id}
             product={product}
+            
           />
       )}
-      </Grid>
+      </div>
       <Hero
        headline="Cookies, ice cream and muffin"
        description="Marshmallow tart jelly icing cotton candy tootsie roll cotton candy candy canes. Cake liquorice sesame snaps. Cupcake cake cheesecake pie marshmallow lollipop soufflé marshmallow dessert. Cheesecake jujubes halvah chupa chups lollipop tootsie roll. Jelly-o tiramisu jelly toffee cake croissant lemon drops pudding. Donut sesame snaps gummi bears toffee. Sesame snaps jelly-o oat cake chocolate marzipan cake lollipop. Gingerbread cheesecake jujubes fruitcake cake. Tiramisu cotton candy marzipan candy canes oat cake pudding bonbon."
       />
-      <Marquee>
-        { products.slice(0,3).map(product =>
+      {/* <Marquee>
+        { products.slice(0,10).map(product =>
           <ProductCard
             key={product.id}
             variant="slim"
@@ -61,8 +63,8 @@ export default function Home({
             product={product}
           />
         )}
-      </Marquee>
-    </>
+      </Marquee> */}
+    </div>
   )
 }
 
