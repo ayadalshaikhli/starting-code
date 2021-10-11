@@ -9,13 +9,13 @@ const HomePage: FC = () => {
   useEffect(() => {
     gsap.from(".firstimg", 2, {
       y: "400",
-      stagger: ".1",
+      stagger: .1,
       ease: Expo.easeInOut,
     });
     gsap.to(".title", 3, {
       opacity: "1",
       scale: "1.1",
-      stagger: ".1",
+      stagger: .1,
       ease: Expo.easeInOut,
     });
   });
