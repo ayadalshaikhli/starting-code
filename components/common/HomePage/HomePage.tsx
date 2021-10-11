@@ -6,6 +6,7 @@ import Image from "next/image"
 import IMAGES from "assets/img/images";
 
 const HomePage: FC = () => {
+  let stagger:string = ""
   useEffect(() => {
     gsap.from(".firstimg", 2, {
       y: "400",
