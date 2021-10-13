@@ -17,7 +17,8 @@ interface Props {
 const ProductView: FC<Props> = ({ product }) => {
   const [ choices, setChoices ] = useState<Choices>({})
   const [ isLoading, setIsLoading ] = useState(false)
-  const [show,setShow] = useState(false)
+  const [showdes,setShowdes] = useState(false)
+  const [showshi,setShowshi] = useState(false)
 
   const { openSidebar } = useUI()
   const addItem = useAddItem()
@@ -99,13 +100,18 @@ console.log(product);
                 </div>
               </div>
             )}
-            <div className="des pb-14 break-words overflow-x-hidden  w-full h-48  max-w-xl text-sm" >
+            <div className="des pb-14 break-words  w-full h-48  max-w-xl text-sm" >
              
               <Button
-              onClick={()=>setShow(!show)}>
+              onClick={()=>setShowdes(!showdes)}>
                 Description
               </Button>
-              {show?<div>{ product.description }</div>:null}
+              <Button
+              onClick={()=>setShowshi(!showshi)}>
+                Shipping
+              </Button>
+              {showdes?<div className="overflow-x-hidden  h-48 ">{ product.description }</div>:null}
+              {showshi?<div className="overflow-x-hidden  h-48 ">Helo</div>:null}
             </div>
           </section>
           <div>

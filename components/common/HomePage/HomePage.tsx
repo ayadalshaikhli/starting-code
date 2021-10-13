@@ -24,11 +24,11 @@ const HomePage: FC = () => {
     <div
       className="flex flex-col  main-page"
       style={{
-        fontFamily: "Belleza",
+        fontFamily: 'Ubuntu Mono'
       }}
     >
       <div className="text-white text-center md:mt-20 title opacity-0 my-48 mx-auto max-w-7xl px-4 sm:mt-24 ">
-        <h1 className="text-7xl text-red-800 title	">MaaNGe </h1>
+        <h1 className="text-7xl text-red-800 title	">TaTOMaaNGe </h1>
         <p className="text-5xl title">Professional</p>
         <p className="title">Top Nature Hair</p>
         <button className="rounded text-red-800 p-2 border-2 border-red-800 border-opacity-100 mt-5">

@@ -63,17 +63,7 @@ const ProductCard: FC<Props> = ({ product, variant = "simple" }) => {
         ) : (
           <>
               <div className="product overflow-hidden  md:flex md:flex-col">
-                <div className="product1 flex flex-col">
-                  <div className="text-left p-5">
-                    <h3 className="p-2 text-md">
-                      <span>{product.name}</span>
-                    </h3>
-                    <span className={s.productPrice}>
-                      {product.price.value} {product.price.currencyCode}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-5">
+                <div className="p-2">
                   {product.images && (
                     <Image
                       className={s.productImage}
@@ -85,6 +75,16 @@ const ProductCard: FC<Props> = ({ product, variant = "simple" }) => {
                       layout="fixed"
                     />
                   )}
+                </div>
+                <div className="product1 flex flex-col pb-32">
+                  <div className="text-left p-2">
+                    <h3 className="p-2 text-md">
+                      <span>{product.name}</span>
+                    </h3>
+                    <span className={s.productPrice}>
+                      {product.price.value} {product.price.currencyCode}
+                    </span>
+                  </div>
                 </div>
               </div>
             

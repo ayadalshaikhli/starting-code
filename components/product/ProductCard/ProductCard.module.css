@@ -62,6 +62,6 @@
 }
 
 .productPrice {
-  @apply bg-primary pl-2  pb-2 pt-2 px-2 font-semibold text-sm;
+  @apply pl-2  pb-2 pt-2 px-2 font-semibold text-sm;
   letter-spacing: 0.4px;
 }

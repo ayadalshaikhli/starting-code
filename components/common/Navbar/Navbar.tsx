@@ -10,7 +10,7 @@ const Navbar: FC = () => {
   return (
     <Container>
       <div className={s.root}>
-        <div className="flex flex-1 items-center">
+        <div className="flex flex-1  items-center text-black z-30">
           <Link href="/">
             <a className={s.logo}>
             MaaNGe
@@ -21,16 +21,11 @@ const Navbar: FC = () => {
               <a className={s.link}>All</a>
             </Link>
             <Link href="/">
-              <a className={s.link}>Clothes</a>
+              <a className={s.link}>Choice</a>
             </Link>
-            <Link href="/">
-              <a className={s.link}>Accesories</a>
-            </Link>
-            <Link href="/">
-              <a className={s.link}>Shoes</a>
-            </Link>
+
           </nav>
-          <div className="flex flex-1 justify-end space-x-8">
+          <div className="flex flex-1 justify-end space-x-8 pl-10">
             <Usernav />
           </div>
         </div>

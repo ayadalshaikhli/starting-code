@@ -1,17 +1,14 @@
-
-
 .root {
   @apply flex flex-row md:py-6;
 }
 
 .link {
-  @apply text-accents-6 leading-6 font-medium transition;
+  @apply leading-6 font-medium transition text-black;
 
   &:hover {
     @apply text-accents-9;
   }
 }
-
 
 .logo {
   @apply text-2xl font-bold;

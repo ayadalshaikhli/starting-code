@@ -5,6 +5,8 @@ import { getConfig } from "@framework/api/config"
 import { HomePage, Layout } from "@components/common"
 import { ProductCard } from "@components/product"
 import { Grid, Hero, Marquee } from "@components/ui"
+import Social from "@components/common/Social"
+import Details from "@components/common/Details"
 
 export async function getStaticProps() {
   const config = getConfig()
@@ -23,9 +25,12 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
 
   return (
-    <div className="body">
+    <div className="body" style={{
+      fontFamily: 'Ubuntu Mono'
+    }}>
+    <Social/>
     <HomePage/>
-        <div className="flex flex-col sm:flex-col md:flex-row pl-20">
+        <div className="flex flex-col sm:flex-col md:flex-row pl-20 z-10">
         { products.slice(0,10).map(product =>
           <ProductCard
             key={product.id}
@@ -39,6 +44,7 @@ export default function Home({
        description="MAANGE Makeup brushes set professional with Natural Hair 
        Foundation Powder Eyeshadow Make up Brush Blush 6pcs-20pcs"
       />
+      <Details/>
       {/* <Marquee>
         { products.slice(0,10).map(product =>
           <ProductCard
