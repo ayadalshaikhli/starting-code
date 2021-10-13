@@ -30,12 +30,80 @@ const HomePage: FC = () => {
       <div className="text-white text-center md:mt-20 title opacity-0 my-48 mx-auto max-w-7xl px-4 sm:mt-24 ">
         <h1 className="text-7xl text-red-800 title	">MaaNGe </h1>
         <p className="text-5xl title">Professional</p>
-        <p className="title">Top Nature Hair / Wooden Handle</p>
+        <p className="title">Top Nature Hair</p>
         <button className="rounded text-red-800 p-2 border-2 border-red-800 border-opacity-100 mt-5">
           Shop Now
         </button>
+
+      </div> 
+      {/* */}
+      <div className="smallbrush flex-nowrap flex pl-10 md:hidden xl:hidden lg:hidden">
+      <Image
+            className="firstimg bg-contain bg-center"
+            src={IMAGES.background1}
+            alt="helo"
+            height={350}
+            width={70}
+            quality="100"
+            layout="intrinsic"
+          />
+      <Image
+            className="firstimg bg-contain bg-center"
+            src={IMAGES.background2}
+            alt="helo"
+            height={350}
+            width={70}
+            quality="100"
+            layout="intrinsic"
+          />
+      <Image
+            className="firstimg bg-contain bg-center"
+            src={IMAGES.background3}
+            alt="helo"
+            height={350}
+            width={70}
+            quality="100"
+            layout="intrinsic"
+          />
+      <Image
+            className="firstimg bg-contain bg-center"
+            src={IMAGES.background4}
+            alt="helo"
+            height={350}
+            width={70}
+            quality="100"
+            layout="intrinsic"
+          />
+      <Image
+            className="firstimg bg-contain bg-center"
+            src={IMAGES.background5}
+            alt="helo"
+            height={350}
+            width={70}
+            quality="100"
+            layout="intrinsic"
+          />
+      <Image
+            className="firstimg bg-contain bg-center"
+            src={IMAGES.background6}
+            alt="helo"
+            height={350}
+            width={70}
+            quality="100"
+            layout="intrinsic"
+          />
+          
+      <Image
+            className="firstimg bg-contain bg-center"
+            src={IMAGES.background7}
+            alt="helo"
+            height={350}
+            width={70}
+            quality="100"
+            layout="intrinsic"
+          />
       </div>
-      <div className=" md:ml-96 flex my-48 mx-auto max-w-7xl px-4 sm:mt-24 md:mt-1 text-center">
+      <div className="hidden md:flex my-48 mx-auto  md:max-w-7xl px-4 sm:mt-24 md:mt-1 text-center ">
         <div className=" firstimg overflow-hidden  ml-10 ">
           <Image
             className="bg-contain bg-center"

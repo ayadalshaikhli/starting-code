@@ -41,7 +41,7 @@ const ProductView: FC<Props> = ({ product }) => {
     }
   }
 
-console.log(product.options);
+console.log(product);
 
   return (
     <Container>
@@ -105,7 +105,7 @@ console.log(product.options);
               onClick={()=>setShow(!show)}>
                 Description
               </Button>
-              {show?<h1 className="des">{ product.description }</h1>:null}
+              {show?<div>{ product.description }</div>:null}
             </div>
           </section>
           <div>

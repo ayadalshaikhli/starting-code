@@ -62,11 +62,10 @@ const ProductCard: FC<Props> = ({ product, variant = "simple" }) => {
           </>
         ) : (
           <>
-      
-              <div className="product flex flex-col">
+              <div className="product overflow-hidden  md:flex md:flex-col">
                 <div className="product1 flex flex-col">
                   <div className="text-left p-5">
-                    <h3 className="p-2">
+                    <h3 className="p-2 text-md">
                       <span>{product.name}</span>
                     </h3>
                     <span className={s.productPrice}>
@@ -83,7 +82,7 @@ const ProductCard: FC<Props> = ({ product, variant = "simple" }) => {
                       height={240}
                       width={240}
                       quality="85"
-                      layout="intrinsic"
+                      layout="fixed"
                     />
                   )}
                 </div>
