@@ -25,7 +25,7 @@ export default function Home({
   return (
     <div className="body">
     <HomePage/>
-        <div className="flex pl-20">
+        <div className="flex flex-col sm:flex-col pl-20">
         { products.slice(0,10).map(product =>
           <ProductCard
             key={product.id}
@@ -35,8 +35,9 @@ export default function Home({
       )}
       </div>
       <Hero
-       headline="Cookies, ice cream and muffin"
-       description="Marshmallow tart jelly icing cotton candy tootsie roll cotton candy candy canes. Cake liquorice sesame snaps. Cupcake cake cheesecake pie marshmallow lollipop soufflé marshmallow dessert. Cheesecake jujubes halvah chupa chups lollipop tootsie roll. Jelly-o tiramisu jelly toffee cake croissant lemon drops pudding. Donut sesame snaps gummi bears toffee. Sesame snaps jelly-o oat cake chocolate marzipan cake lollipop. Gingerbread cheesecake jujubes fruitcake cake. Tiramisu cotton candy marzipan candy canes oat cake pudding bonbon."
+       headline="MAANGE Makeup brushes"
+       description="MAANGE Makeup brushes set professional with Natural Hair 
+       Foundation Powder Eyeshadow Make up Brush Blush 6pcs-20pcs"
       />
       {/* <Marquee>
         { products.slice(0,10).map(product =>
