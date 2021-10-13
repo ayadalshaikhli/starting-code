@@ -25,7 +25,7 @@ export default function Home({
   return (
     <div className="body">
     <HomePage/>
-        <div className="flex flex-col sm:flex-col pl-20">
+        <div className="flex flex-col sm:flex-col md:flex-row pl-20">
         { products.slice(0,10).map(product =>
           <ProductCard
             key={product.id}
