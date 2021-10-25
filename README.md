@@ -8,7 +8,7 @@
     <img src="https://i.ibb.co/2hhxncJ/Capture.png" alt="screenshot" >
   </a>
 
-  <h3 align="center">Teatro</h3>
+  <h3 align="center">TatoMaange</h3>
 
   <p align="center">
     An awesome Website to buy brushes from aliexpress
