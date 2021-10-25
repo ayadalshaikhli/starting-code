@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://startying-ayadalshaikhli.vercel.app/">
-    <img src="https://i.ibb.co/Zh0nNCT/screencapture-el-teatro-herokuapp-2021-10-25-12-17-24-1.png" alt="screenshot" >
+    <img src="https://i.ibb.co/2hhxncJ/Capture.png" alt="screenshot" >
   </a>
 
   <h3 align="center">Teatro</h3>
